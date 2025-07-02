@@ -7,20 +7,30 @@ import controllers.Sets;
 
 public class App {
     public static void main(String[] args) throws Exception {
-         Sets set = new Sets();
-        System.out.println("-------------HashSet---------------");
-        runHashSet(set);
-        System.out.println("-----------LinkedHashSet---------------");
-        runLinkedHashSet(set);
-        System.out.println("--------------TreeSet--------------");
-        runTreeSet(set);
-        System.out.println("-----------Comparador---------------");
-        runTreeSetComparador(set);
-        System.out.println("------Comparador Inversa---------");
-        runTreeSetComparadorInv(set);
+        //Sets set = new Sets();
+        //System.out.println("-------------HashSet---------------");
+        //runHashSet(set);
+        //System.out.println("-----------LinkedHashSet---------------");
+        //runLinkedHashSet(set);
+        //System.out.println("--------------TreeSet--------------");
+        //runTreeSet(set);
+        //System.out.println("-----------Comparador---------------");
+        //runTreeSetComparador(set);
+        //System.out.println("------Comparador Inversa---------");
+        //runTreeSetComparadorInv(set);
 
         ContactoController cC = new ContactoController();
-        System.out.println(cC);
+
+        System.out.println("Agenda ordenada por Apellido y Nombre:");
+        cC.runTreeContacto();
+
+        System.out.println("\nAgenda ordenada por Apellido, Nombre y Teléfono (descendente):");
+        cC.runTreeContactoTelefono();
+
+         System.out.println("\nAgenda ordenada por Hash Code");
+        cC.runTreeContactoHash();
+        
+        
         
        
 

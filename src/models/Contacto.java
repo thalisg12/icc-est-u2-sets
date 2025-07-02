@@ -54,6 +54,15 @@ public class Contacto {
     }
 
 
+    @Override
+    public int hashCode() {
+        return nombre.hashCode();
+    }
+
+
+    
+
+
     
     
     

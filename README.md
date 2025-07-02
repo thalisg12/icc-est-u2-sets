@@ -37,7 +37,7 @@ Se utilizan ejemplos simples con palabras para visualizar cómo cada estructura 
 
 ## Consola
 
-
+![Salida en consola](image.png)
 
 
 ## 🚀 Ejecución
